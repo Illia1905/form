@@ -5,11 +5,15 @@ body {
 input,
 select,
 textarea {
-    
+    max-width: 100%;
     box-sizing: border-box;
 }
 
-.form {
+.form,
+.form-3,
+.form-4,
+.form-5,
+.form-6 {
     max-width: 330px;
     margin: 10px;
 }

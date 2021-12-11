@@ -13,82 +13,83 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="form">
-            <form action="php/sendmail.php" method="post">
-                <h2 class="width">01. проста форма</h2>
-                <div class="text">
-                    <p class=" width">
-                        <lable><input type="text" value="Введіть ім’я" required></lable>
-                    </p>
-                </div>
-                <div class="text">
-                    <p class=" width">
-                        <lable><input type="text" value="Email" required></lable>
-                    </p>
-                </div>
-                <div class="youre width">
-                    <select name="Ваше місто" id="Youre" required>
-                        <option value="Ваше місто">Ваше місто</option>
-                        <option value="Київ">Київ</option>
-                        <option value="Львів">Львів</option>
-                        <option value="Хмельницький">Хмельницький</option>
-                    </select>
-                </div>
-
-                <div class="text">
-                    <p class=" width"><textarea name="Email" id="Email" cols="30" rows="10">Email</textarea></p>
-                </div>
-                <div class="text"></div>
-                <lable><input class="width button" type="submit" value="Зареєструватися"></lable>
-        </div>
-        </form>
-    </div>
-    <div class="wrapper">
-        <div class="form-2">
-            <h2>02. елементи</h2>
-            <form action="php/sendmail.php" method="post">
-                <div class="left">
-                    <input type="radio">Нова Пошта<br>
-                    <input type="radio">Кур’єр<br>
-                    <input type="radio" disabled>Самовивіз
-                </div>
-                <div class="center">
-                    <input type="checkbox">Прочитав умови договору<br>
-                    <input type="checkbox">Згідний з ПДВ 9% <br>
-                    <input type="checkbox" disabled>Отримувати новини на ел. пошту
-                </div>
-                <div class="right">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Статус</th>
-                                <th><input type="checkbox" name="" id="">Новинки</th>
-                                <th><input type="checkbox" name="" id="">Акційні товари</th>
-                                <th><input type="checkbox" name="" id="">Розпродаж</th>
-                            </tr>
-                        </thead>
-                        <tb>
-                            <tr>
-                                <td>Дата</td>
-                                <td>
-                                    <select name="" id="" required>
-                                        <option value="">2018-03-17</option>
-                                    </select>
-                                </td>
-                            </tr>
-                        </tb>
-                    </table>
-                </div>
+    <div class="">
+        <div>
+            <div class="form">
+                <form action="php/sendmail.php" method="post">
+                    <h2 class="width">01. проста форма</h2>
+                    <div class="text">
+                        <p class=" width">
+                            <lable><input type="text" placeholder="Введіть ім’я" required></lable>
+                        </p>
+                    </div>
+                    <div class="text">
+                        <p class=" width">
+                            <lable><input type="text" placeholder="Email" required></lable>
+                        </p>
+                    </div>
+                    <div class="youre width">
+                        <select name="Ваше місто" id="Youre" required>
+                            <option>Ваше місто</option>
+                            <option></option> Київ</option>
+                            <option>Львів</option>
+                            <option>Хмельницький</option>
+                        </select>
+                    </div>
+                    <div class="text">
+                        <p class=" width"><textarea name="Email" id="Email" cols="30" rows="10" placeholder="Email"></textarea></p>
+                    </div>
+                    <div class="text"></div>
+                    <lable><input class="width button" type="submit" value="Зареєструватися"></lable>
+            </div>
             </form>
-            <div class="wrapper">
+        </div>
+        <div >
+            <div class="form-2">
+                <h2>02. елементи</h2>
+                <form action="php/sendmail.php" method="post">
+                    <div class="left">
+                        <input type="radio" name="delivery">Нова Пошта<br>
+                        <input type="radio" name="delivery">Кур’єр<br>
+                        <input type="radio" disabled>Самовивіз
+                    </div>
+                    <div class="center">
+                        <input type="checkbox">Прочитав умови договору<br>
+                        <input type="checkbox">Згідний з ПДВ 9% <br>
+                        <input type="checkbox" disabled>Отримувати новини на ел. пошту
+                    </div>
+                    <div class="right">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Статус</th>
+                                    <th><input type="checkbox" name="" id="">Новинки</th>
+                                    <th><input type="checkbox" name="" id="">Акційні товари</th>
+                                    <th><input type="checkbox" name="" id="">Розпродаж</th>
+                                </tr>
+                            </thead>
+                            <tb>
+                                <tr>
+                                    <td>Дата</td>
+                                    <td>
+                                        <select name="" id="" required>
+                                            <option value="">2018-03-17</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tb>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <div >
                 <div class="form-3">
                     <h2>03. стилізовані чекбокси</h2>
                     <form action="php/sendmail.php" method="post">
                         <div class="style-checkbox">
-                            <div class="left" >
-                                <input type="radio">Чоловік<br>
-                                <input type="radio">Жінка
+                            <div class="left">
+                                <input type="radio" name="pol">Чоловік<br>
+                                <input type="radio" name="pol">Жінка
                             </div>
                             <div class="right">
                                 <input type="checkbox">Отримувати новини<br>
@@ -100,33 +101,32 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="wrapper">
-        <div class="form-4">
-            <form action="php/sendmail.php" method="post">
-                <h2>04. форма таблицею</h2>
-                <h3>Заповніть усі необхідні поля</h3>
+        <div >
+            <div class="form-4">
+                <form action="php/sendmail.php" method="post">
+                    <h2>04. форма таблицею</h2>
+                    <h3>Заповніть усі необхідні поля</h3>
                     <div class="top">
                         <table>
                             <thead>
                                 <tr>
-                                    <th>ФІО:</th>
-                                    <th><input type="text" value="Введіть ім’я" required></th>
+                                    <th>ПІП:</th>
+                                    <th><input type="text" placeholder="Введіть ім’я" required></th>
                                 </tr>
                                 <tr>
                                     <th>Пароль:</th>
-                                    <th><input type="text" value="Введіть не менше 6 символів" required minlength="6" ></th>
+                                    <th><input type="text" placeholder="Введіть не менше 6 символів" required minlength="6">
+                                    </th>
                                 </tr>
                                 <tr>
                                     <th>Місто:</th>
                                     <th><select name="" id="">
-                                        <option value="">Хмельницький</option>
-                                    </select></th>
+                                            <option value="">Хмельницький</option>
+                                        </select></th>
                                 </tr>
                                 <tr>
                                     <th>Стать:</th>
-                                    <th><input type="radio">Чоловік</th>
-                                    <th><input type="radio">Жінка</th>
+                                    <th><input type="radio" name="point">Чоловік<input type="radio" name="point">Жінка</th>
                                 </tr>
                                 <tr>
                                     <th>Фото:</th>
@@ -134,41 +134,81 @@
                                 </tr>
                                 <tr>
                                     <th>Коментарій:</th>
-                                    <th><textarea name="" id="" cols="30" rows="10" >Введіть текст повідомлення</textarea></th>
+                                    <th><textarea name="" id="" cols="30" rows="10"placeholderВведіть текст повідомлення></textarea>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
                     </div>
                     <div class="down"><input type="submit" value="Зареєструватися"></div>
-                
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="wrapper">
-        <div class="form-5">
-            <h2>05. форма таблицею</h2>
-            <h3>Оформлення заявки</h3>
-            <form action="php/sendmail.php" method="post">
-                <table>
-                    <theade>
-                        <tr>
-                            <th><h6>Прізвище та ім’я</h6><input type="text" value="Василь Вірастюк"></th>
-                            <th><h6>Ел. пошта</h6><input type="text"></th>
-                            <th><h6>Телефон</h6><input type="text"></th>
-                        </tr>
-                        <tr>
-                            <th><h6>Країна</h6><select name="" id=""></select> <option></option> Індонезія"</th>
-                            <th><h6>Адреса</h6><input type="text"></th>
-                            <th><h6></h6><input type="text"></th>
-                        </tr>
-                        <tr>
-                            <th><h6></h6><input type="text"></th>
-                            <th><h6></h6><input type="text"></th>
-                            <th><h6></h6><input type="text"></th>
-                        </tr>
-                    </theade>
-                </table>
-            </form>
+        <div >
+            <div class="form-5">
+                <h2>05. форма таблицею</h2>
+                <h3>Оформлення заявки</h3>
+                <form action="php/sendmail.php" method="post">
+                    <table>
+                        <theade>
+                            <tr>
+                                <th>
+                                    <h6>Прізвище та ім’я</h6><input type="text" placeholder="Василь Вірастюк">
+                                </th>
+                                <th>
+                                    <h6>Ел. пошта</h6><input type="text">
+                                </th>
+                                <th>
+                                    <h6>Телефон</h6><input type="text">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h6>Країна</h6><select name="" id="">
+                                        <option value="">Індонезія</option>
+                                    </select>
+                                </th>
+                                <th>
+                                    <h6>Адреса</h6><input type="text">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h6>Місто</h6><input type="text">
+                                </th>
+                                <th>
+                                    <h6>Будинок</h6><input type="text">
+                                </th>
+                                <th>
+                                    <h6>Поштовий індекс</h6><input type="text">
+                                </th>
+                            </tr>
+                        </theade>
+                    </table>
+                    <div class="down"><input type="checkbox" name="" id=""> Я погоджуюсь з правилами оплати та доставки
+                        товару</div>
+                    <div class="down-left">
+                        <input type="submit" value="Повернутися назад">
+                    </div>
+                    <div class="down-left">
+                        <input type="submit" value="Оформити покупку">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div >
+            <div class="form-6">
+                <h2>06. фіксована форма</h2>
+                <form action="">
+                    <h6>Логін</h6>
+                    <input type="text">
+                    <h6>Пароль</h6>
+                    <input type="text"><br>
+                    <a href="#">Забули пароль?</a><br>
+                    <input type="checkbox" name="" id="">Запам’ятати пароль <br>
+                    <input type="submit" value="Увійти">
+                </form>
+            </div>
         </div>
     </div>
 </body>
