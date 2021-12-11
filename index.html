@@ -49,9 +49,11 @@
                 <h2>02. елементи</h2>
                 <form action="php/sendmail.php" method="post">
                     <div class="left">
-                        <input type="radio" name="delivery">Нова Пошта<br>
-                        <input type="radio" name="delivery">Кур’єр<br>
-                        <input type="radio" disabled>Самовивіз
+                        <lable>
+                            <input type="radio" name="delivery">Нова Пошта<br>
+                            <input type="radio" name="delivery">Кур’єр<br>
+                            <input type="radio" disabled>Самовивіз
+                        </lable>
                     </div>
                     <div class="center">
                         <input type="checkbox">Прочитав умови договору<br>
@@ -137,10 +139,11 @@
                                     <th><textarea name="" id="" cols="30" rows="10"placeholderВведіть текст повідомлення></textarea>
                                     </th>
                                 </tr>
+                                <div class="down"><input class="width button" type="submit" value="Зареєструватися"></div>
                             </thead>
                         </table>
                     </div>
-                    <div class="down"><input type="submit" value="Зареєструватися"></div>
+                    
                 </form>
             </div>
         </div>
@@ -191,7 +194,7 @@
                         <input type="submit" value="Повернутися назад">
                     </div>
                     <div class="down-left">
-                        <input type="submit" value="Оформити покупку">
+                        <input class="width button" type="submit" value="Оформити покупку">
                     </div>
                 </form>
             </div>
@@ -206,7 +209,7 @@
                     <input type="text"><br>
                     <a href="#">Забули пароль?</a><br>
                     <input type="checkbox" name="" id="">Запам’ятати пароль <br>
-                    <input type="submit" value="Увійти">
+                    <input class="width button" type="submit" value="Увійти">
                 </form>
             </div>
         </div>

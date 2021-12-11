@@ -5,17 +5,27 @@ body {
 input,
 select,
 textarea {
-    max-width: 100%;
     box-sizing: border-box;
 }
 
 .form,
-.form-3,
-.form-4,
 .form-5,
 .form-6 {
     max-width: 330px;
     margin: 10px;
+}
+
+.form-3,
+.form-4 {
+    max-width: 680px;
+}
+.form input,
+.form-4 input,
+.form-6 input,
+.form section,
+.form-4 section,
+.form-6 section {
+    min-width: 100%;
 }
 .form p {
     max-width: 330px;
@@ -30,7 +40,6 @@ textarea {
 }
 
 
-
 .text p {
     max-width: 330px;
     margin: 10px 0;
@@ -41,6 +50,7 @@ textarea {
 }
 
 .button {
+    min-width: 100%;
     border: 1px solid #12d661;
     background-color: #12d661;
     padding: 13px;
@@ -61,3 +71,4 @@ textarea {
 .style-checkbox {
     display: flex;
 }
+
