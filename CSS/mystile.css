@@ -1,0 +1,59 @@
+body {
+    background-color: #fff;
+}
+
+input,
+select,
+textarea {
+    
+    box-sizing: border-box;
+}
+
+.form {
+    max-width: 330px;
+    margin: 10px;
+}
+.form p {
+    max-width: 330px;
+}
+ h2 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+
+}
+
+
+
+.text p {
+    max-width: 330px;
+    margin: 10px 0;
+}
+
+.youre {
+    margin: 5px 0;
+}
+
+.button {
+    border: 1px solid #12d661;
+    background-color: #12d661;
+    padding: 13px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.form-2 {
+    margin: 10px;
+}
+.form-2 form {
+    display: flex;
+}
+.style-checkbox {
+    display: flex;
+}
