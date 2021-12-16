@@ -173,36 +173,46 @@
                                 </label>
                             </th>
                             <th>
-                                <label>Ел. пошта
-                                    </h6><input type="text"></label></label>
+                                <label for="email"><h6>Ел. пошта
+                                    </h6><input type="text" id="email"></label></label>
                             </th>
                             <th>
                                 <h6 class="ppa">
-                                    <label>Телефон
-                                </h6><input type="text"></label>
+                                    <label for="tel">Телефон
+                                </h6><input type="text" id="tel"></label>
                             </th>
                         </tr>
-
+                        <hr>
                         <tr>
                             <th>
-                                <h6 class="ppa">Країна</h6><select name="" id="">
-                                    <hr>
-                                    <option value="">Індонезія</option>
-                                </select>
+                                <label for="country">
+                                    <h6 class="ppa">Країна</h6><select name="" id="">
+                                        <hr>
+                                        <option value="" id="country">Індонезія</option>
+                                    </select>
+                                </label>
                             </th>
-                            <th>
-                                <h6 class="ppa">Адреса</h6><input type="text">
+                            <th colspan="2">
+                                <label for="adres">
+                                    <h6 class="ppa" >Адреса</h6><input type="text" id="adres">
+                                </label>
                             </th>
                         </tr>
                         <tr>
                             <th>
-                                <h6 class="ppa">Місто</h6><input type="text">
+                                <label for="city">
+                                    <h6 class="ppa">Місто</h6><input type="text" id="city">
+                                </label>
                             </th>
                             <th>
-                                <h6 class="ppa">Будинок</h6><input type="text">
+                                <label for="text">
+                                    <h6 class="ppa">Будинок</h6><input type="text" id="text">
+                                </label>
                             </th>
                             <th>
-                                <h6 class="ppa">Поштовий індекс</h6><input type="text">
+                                <label for="index">
+                                    <h6 class="ppa">Поштовий індекс</h6><input type="text" id="index">
+                                </label>
                             </th>
                         </tr>
                     </theade>
@@ -229,10 +239,12 @@
                     <h6>Логін</h6><input type="text" id="login">
                 </label>
                 <hr>
-                <h6 class="password">Пароль</h6>
-                <input type="password"><br>
-                <a href="#">Забули пароль?</a><br>
-                <input type="checkbox" name="" id="">Запам’ятати пароль <br>
+                <label for="pass">
+                    <h6 class="password">Пароль</h6>
+                    <input type="password" id="pass"><br>
+                    <a href="#">Забули пароль?</a><br>
+                </label>
+                <label for="khnow"><input type="checkbox" name="" id="khnow">Запам’ятати пароль</label> <br>
                 <input class="width button" type="submit" value="Увійти">
             </form>
         </div>

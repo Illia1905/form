@@ -1,7 +1,9 @@
 body {
     background-color: #fff;
 }
-
+h6 {
+    margin: 5px;
+}
 input,
 select,
 textarea {
