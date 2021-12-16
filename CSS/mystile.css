@@ -19,7 +19,9 @@ textarea {
 .form-4 {
     max-width: 680px;
 }
+
 .form input,
+.form section,
 .form-4 input,
 .form-6 input,
 .form section,
@@ -27,10 +29,12 @@ textarea {
 .form-6 section {
     min-width: 100%;
 }
+
 .form p {
     max-width: 330px;
 }
- h2 {
+
+h2 {
     font-size: 20px;
     letter-spacing: 0px;
     color: #b3b3b3;
@@ -49,6 +53,13 @@ textarea {
     margin: 5px 0;
 }
 
+.disabled input {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
 .button {
     min-width: 100%;
     border: 1px solid #12d661;
@@ -65,10 +76,50 @@ textarea {
 .form-2 {
     margin: 10px;
 }
+
 .form-2 form {
     display: flex;
 }
-.style-checkbox {
-    display: flex;
+
+.table table {
+    width: 473px;
+    height: 114px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
 }
 
+.style-checkbox {
+    display: flex;
+
+}
+.buttons {
+    display: flex;
+    margin: 30px 300px 0 0;
+}
+.down-left {
+    max-width: 200px;
+    background-color: #fff;
+    margin:0 300px 0 0;
+}
+.down-left a {
+    border: 1px solid #84868d;
+}
+.form-5 {
+    max-width: 680px;
+}
+
+.ppa {
+    min-width: 220px;
+}
+
+.form-5 h6 {
+    margin: 5px;
+}
+
+.form-5 select,
+.form-5 input {
+    min-width: 100%;
+    max-height: 40px;
+    border-radius: 2px 2px 2px 2px;
+}
