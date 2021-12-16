@@ -21,12 +21,13 @@ textarea {
 }
 
 .form input,
-.form section,
+.form select,
 .form-4 input,
 .form-6 input,
 .form section,
-.form-4 section,
-.form-6 section {
+.form-4 select,
+.form-6 select,
+.form textarea {
     min-width: 100%;
 }
 
@@ -38,9 +39,7 @@ h2 {
     font-size: 20px;
     letter-spacing: 0px;
     color: #b3b3b3;
-    font-weight: 700;
     font-family: "Roboto";
-
 }
 
 
@@ -56,7 +55,6 @@ h2 {
 .disabled input {
     font-size: 14px;
     color: #b3b3b3;
-    font-weight: 400;
     font-family: "Roboto";
 }
 
@@ -67,7 +65,6 @@ h2 {
     padding: 13px;
     font-size: 14px;
     color: #ffffff;
-    font-weight: 700;
     font-family: "Roboto";
     text-align: center;
     border-radius: 2px 2px 2px 2px;
@@ -81,7 +78,20 @@ h2 {
     display: flex;
 }
 
+.form-2 p {
+    margin: 0;
+}
+
+.left {
+    margin-right: 10px;
+}
+
+.table {
+    margin-right: 11px;
+}
+
 .table table {
+    margin-left: 100px;
     width: 473px;
     height: 114px;
     border-radius: 3px;
@@ -93,18 +103,23 @@ h2 {
     display: flex;
 
 }
+
 .buttons {
     display: flex;
     margin: 30px 300px 0 0;
 }
+
 .down-left {
     max-width: 200px;
     background-color: #fff;
-    margin:0 300px 0 0;
+    margin: 0 300px 0 0;
 }
+
 .down-left a {
+    min-width: 220px;
     border: 1px solid #84868d;
 }
+
 .form-5 {
     max-width: 680px;
 }

@@ -17,12 +17,17 @@
         <div>
             <div class="form">
                 <form action="php/sendmail.php" method="post">
-                    <h2 class="width">01. проста форма</h2>
+                  
+                        <h2 class="width">01. проста форма</h2>
                     <div class="text">
-                        <p class=" width"><lable><input type="text" placeholder="Введіть ім’я" required></lable></p>
+                        <p class=" width">
+                            <label><input type="text" placeholder="Введіть ім’я" required></label>
+                        </p>
                     </div>
                     <div class="text">
-                        <p class=" width"><lable><input type="text" placeholder="Email" required></lable></p>
+                        <p class=" width">
+                            <label><input type="text" placeholder="Email" required></label>
+                        </p>
                     </div>
                     <div class="youre width">
                         <select name="Ваше місто" id="Youre" required>
@@ -36,7 +41,7 @@
                         <p class=" width"><textarea name="Email" id="Email" cols="30" rows="10"
                                 placeholder="Email"></textarea></p>
                     </div>
-                    <lable><input class="width button" type="submit" value="Зареєструватися"></lable>
+                    <label><input class="width button" type="submit" value="Зареєструватися"></label>
                 </form>
             </div>
         </div>
@@ -44,10 +49,10 @@
             <div class="form-2">
                 <h2>02. елементи</h2>
                 <form action="php/sendmail.php" method="post">
+
                     <div class="left">
                         <p> <label for="post"><input type="radio" name="delivery" id="post">Нова Пошта</label><br></p>
-                        <p><label for="delivery"><input type="radio" name="delivery" id="delivery">Кур’єр</label></p>
-                        <br>
+                        <p><label for="delivery"><input type="radio" name="delivery" id="delivery">Кур’єр</label></p><br>
                         <div class="disabled"><input type="radio" disabled>Самовивіз</div>
                     </div>
                     <div class="center">
@@ -55,15 +60,20 @@
                         <label for="PDW"><input type="checkbox" id="PDW">Згідний з ПДВ 9% <br></label>
                         <div class="disabled"><input type="checkbox" disabled>Отримувати новини на ел. пошту</div>
                     </div>
+
                     <div class="right">
+
                         <div class="table">
                             <table>
                                 <thead>
                                     <tr>
                                         <th>Статус</th>
-                                        <th><label for="news"><input type="checkbox" name="news" id="news">Новинки</label></th>
-                                        <th><label for="sale"><input type="checkbox" name="sale" id="sale">Акційнітовари</label></th>
-                                        <th><label for="last"><input type="checkbox" name="last" id="last">Розпродаж</label></th>
+                                        <th><label for="news"><input type="checkbox" name="news"
+                                                    id="news">Новинки</label></th>
+                                        <th><label for="sale"><input type="checkbox" name="sale"
+                                                    id="sale">Акційнітовари</label></th>
+                                        <th><label for="last"><input type="checkbox" name="last"
+                                                    id="last">Розпродаж</label></th>
                                     </tr>
                                 </thead>
                                 <tb>
@@ -83,13 +93,13 @@
                     <form action="php/sendmail.php" method="post">
                         <div class="style-checkbox">
                             <div class="left">
-                                <lable for="male"><input type="radio" name="pol" id="male">Чоловік</lable><br>
-                                <lable for="famale"><input type="radio" name="pol" id="famale">Жінка</lable>
+                                <label for="male"><input type="radio" name="pol" id="male">Чоловік</label><br>
+                                <label for="famale"><input type="radio" name="pol" id="famale">Жінка</label>
                             </div>
                             <div class="right">
-                                <lable for="get"><input type="checkbox" id="get">Отримувати новини<br></lable>
-                                <lable for="buy"><input type="checkbox" id="buy">Купити додому ковбаси<br></lable>
-                                <lable for="on"><input type="checkbox" id="on">Включити світло</lable>
+                                <label for="get"><input type="checkbox" id="get">Отримувати новини<br></label>
+                                <label for="buy"><input type="checkbox" id="buy">Купити додому ковбаси<br></label>
+                                <label for="on"><input type="checkbox" id="on">Включити світло</label>
                             </div>
                         </div>
                     </form>
@@ -133,108 +143,100 @@
                                     <th>Коментарій:</th>
                                     <th><textarea name="" id="" cols="30" rows="10" placeholderВведіть текст
                                             повідомлення></textarea>
-                                       
-                                </div> 
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>
-                                            <div class="down"><input class="width button" type="submit" value="Зареєструватися">
-                                        </td>
-                                </tr>
-                            </thead>
-                        </table>
-                        
+
                     </div>
-
-                </form>
-            </div>
-        </div>
-        <div>
-            <div class="form-5">
-                <h2>05. форма таблицею</h2>
-                <h3>Оформлення заявки</h3>
-                <form action="php/sendmail.php" method="post">
-                    <table>
-                        <theade>
-                            <tr>
-                                <th>
-                                    <lable for="name">
-                                        <h6 class="ppa">Прізвище та ім’я</h6><input type="text" id="name">
-                                    </lable>
-
-                                </th>
-                                <th>
-
-
-                                    <lable>Ел. пошта
-                                        </h6><input type="text"></lable></label>
-
-                                </th>
-                                <th>
-
-                                    <h6 class="ppa">
-                                        <lable>Телефон
-                                    </h6><input type="text"></lable>
-
-                                </th>
-                            </tr>
-
-                            <tr>
-                                <th>
-                                    <h6 class="ppa">Країна</h6><select name="" id="">
-                                        <hr>
-                                        <option value="">Індонезія</option>
-                                    </select>
-                                </th>
-                                <th>
-                                    <h6 class="ppa">Адреса</h6><input type="text">
-                                </th>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <h6 class="ppa">Місто</h6><input type="text">
-                                </th>
-                                <th>
-                                    <h6 class="ppa">Будинок</h6><input type="text">
-                                </th>
-                                <th>
-                                    <h6 class="ppa">Поштовий індекс</h6><input type="text">
-                                </th>
-                            </tr>
-                        </theade>
+                    </th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="down"><input class="width button" type="submit" value="Зареєструватися">
+                        </td>
+                    </tr>
+                    </thead>
                     </table>
-                    <hr>
-                    <div class="down"><input type="checkbox" name="" id=""> Я погоджуюсь з правилами оплати та доставки
-                        товару</div>
-                    <div class="buttons">
-                        <div class="down-left">
-                            <a href="">Повернутися назад</a>
-                        </div>
-                        <div class="down-right">
-                            <input class="width button" type="submit" value="Оформити покупку">
-                        </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <div class="form-5">
+            <h2>05. форма таблицею</h2>
+            <h3>Оформлення заявки</h3>
+            <form action="php/sendmail.php" method="post">
+                <table>
+                    <theade>
+                        <tr>
+                            <th>
+                                <label for="name">
+                                    <h6 class="ppa">Прізвище та ім’я</h6><input type="text" id="name">
+                                </label>
+                            </th>
+                            <th>
+                                <label>Ел. пошта
+                                    </h6><input type="text"></label></label>
+                            </th>
+                            <th>
+                                <h6 class="ppa">
+                                    <label>Телефон
+                                </h6><input type="text"></label>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <h6 class="ppa">Країна</h6><select name="" id="">
+                                    <hr>
+                                    <option value="">Індонезія</option>
+                                </select>
+                            </th>
+                            <th>
+                                <h6 class="ppa">Адреса</h6><input type="text">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <h6 class="ppa">Місто</h6><input type="text">
+                            </th>
+                            <th>
+                                <h6 class="ppa">Будинок</h6><input type="text">
+                            </th>
+                            <th>
+                                <h6 class="ppa">Поштовий індекс</h6><input type="text">
+                            </th>
+                        </tr>
+                    </theade>
+                </table>
+                <hr>
+                <div class="down"><input type="checkbox" name="" id=""> Я погоджуюсь з правилами оплати та доставки
+                    товару</div>
+                <div class="buttons">
+                    <div class="down-left">
+                        <a href="">Повернутися назад</a>
                     </div>
-                </form>
-            </div>
+                    <div class="down-right">
+                        <input class="width button" type="submit" value="Оформити покупку">
+                    </div>
+                </div>
+            </form>
         </div>
-        <div>
-            <div class="form-6">
-                <h2>06. фіксована форма</h2>
-                <form action="">
-                    <lable for="login">
-                        <h6>Логін</h6><input type="text" id="login">
-                    </lable>
-                    <hr>
-                    <h6 class="password">Пароль</h6>
-                    <input type="password"><br>
-                    <a href="#">Забули пароль?</a><br>
-                    <input type="checkbox" name="" id="">Запам’ятати пароль <br>
-                    <input class="width button" type="submit" value="Увійти">
-                </form>
-            </div>
+    </div>
+    <div>
+        <div class="form-6">
+            <h2>06. фіксована форма</h2>
+            <form action="">
+                <label for="login">
+                    <h6>Логін</h6><input type="text" id="login">
+                </label>
+                <hr>
+                <h6 class="password">Пароль</h6>
+                <input type="password"><br>
+                <a href="#">Забули пароль?</a><br>
+                <input type="checkbox" name="" id="">Запам’ятати пароль <br>
+                <input class="width button" type="submit" value="Увійти">
+            </form>
         </div>
+    </div>
     </div>
 </body>
 
