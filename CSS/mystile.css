@@ -1,14 +1,41 @@
 body {
     background-color: #fff;
 }
+
 h6 {
     margin: 5px;
 }
+
 input,
 select,
 textarea {
     box-sizing: border-box;
+    padding: 10px;
+    
 }
+
+h3 {
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+th {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+h6 {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-align: left;
+}
+
 
 .form,
 .form-5,
@@ -24,13 +51,12 @@ textarea {
 
 .form input,
 .form select,
-.form-4 input,
 .form-6 input,
 .form section,
 .form-4 select,
 .form-6 select,
 .form textarea {
-    min-width: 100%;
+    width: 100%;
 }
 
 .form p {
@@ -106,6 +132,10 @@ h2 {
 
 }
 
+.men-woman input {
+    max-width: 50%;
+}
+
 .buttons {
     display: flex;
     margin: 30px 300px 0 0;
@@ -125,7 +155,11 @@ h2 {
 .form-5 {
     max-width: 680px;
 }
-
+.w100 {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
 .ppa {
     min-width: 220px;
 }
@@ -136,7 +170,9 @@ h2 {
 
 .form-5 select,
 .form-5 input {
-    min-width: 100%;
     max-height: 40px;
     border-radius: 2px 2px 2px 2px;
+}
+.form-5 table {
+    min-width: 680px;
 }
