@@ -51,10 +51,10 @@
                 <form action="php/sendmail.php" method="post">
 
                     <div class="left non">
-                        <p> <label for="post"><input type="radio" name="delivery" class="w100" id="post">Нова Пошта</label><br></p>
+                        <p> <label for="post"><input type="radio" name="delivery" id="post">Нова Пошта</label><br></p>
                         <p><label for="delivery"><input  type="radio" name="delivery" id="delivery">Кур’єр</label></p>
                         <br>
-                        <div class="disabled"><input type="radio" disabled>Самовивіз</div>
+                        <div class="disabled hj"><input type="radio" disabled>Самовивіз</div>
                     </div>
                     <div class="center non">
                         <label for="gal"><input type="checkbox" id="gal">Прочитав умови договору<br></label>
@@ -69,12 +69,12 @@
                                 <thead>
                                     <tr>
                                         <th>Статус</th>
-                                        <th><div class="non">
-                                            <label for="news"><input type="checkbox" class="w100" name="news"
+                                        <th><div class="">
+                                            <label for="news"><input type="checkbox"  name="news"
                                                         id="news">Новинки</label></th>
-                                            <th><label for="sale"><input type="checkbox"class="w100" name="sale"
+                                            <th><label for="sale"><input type="checkbox" name="sale"
                                                         id="sale">Акційнітовари</label></th>
-                                            <th><label for="last"><input type="checkbox"class="w100" name="last"
+                                            <th><label for="last"><input type="checkbox" name="last"
                                                         id="last">Розпродаж</label></th>
                                         </div>
                                     </tr>
@@ -82,7 +82,7 @@
                                 <tb>
                                     <tr>
                                         <td>Дата</td>
-                                        <td><input type="date"></td>
+                                        <td><input type="date" class="w100" placeholder="17-03-2018"></td>
                                     </tr>
                                 </tb>
                             </table>
@@ -128,7 +128,8 @@
                             </tr>
                             <tr>
                                 <th>Місто:</th>
-                                <th><select name="" id="">
+    
+                                <th><select name=""class="w100" id="">
                                         <option value="">Хмельницький</option>
                                     </select>
                                 </th>
@@ -143,7 +144,7 @@
                             </tr>
                             <tr>
                                 <th>Фото:</th>
-                                <th class="fi"><input type="file" class="w100" value="Виберіть файл"></th>
+                                <th class="fi"><input type="file"  value="Виберіть файл"></th>
                             </tr>
                             <tr>
                                 <th>Коментарій:</th>
@@ -168,7 +169,7 @@
                 <h2>05. форма таблицею</h2>
                 <h3>Оформлення заявки</h3>
                 <form action="php/sendmail.php" method="post">
-                    <table>
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th>
@@ -189,43 +190,43 @@
                                 </th>
                             </tr>
                         </thead>
-                    </table>
+                    
                     <hr>
-                    <table>
-                        <thead>
+                    <table class="table">
+                        <tbody>
                             <tr>
-                                <th>
+                                <td>
                                     <label for="country">
                                         <h6 class="ppa">Країна</h6><select name="" id="" class="w100">
                                             <hr>
                                             <option value="" id="country">Індонезія</option>
                                         </select>
                                     </label>
-                                </th>
-                                <th colspan="2">
+                                </td>
+                                <td colspan="2">
                                     <label for="adres">
                                         <h6 class="ppa">Адреса</h6><input type="text" class="w100" id="adres">
                                     </label>
-                                </th>
+                                </td>
                             </tr>
                             <tr>
-                                <th>
+                                <td>
                                     <label for="city">
                                         <h6 class="ppa">Місто</h6><input type="text" class="w100" id="city">
                                     </label>
-                                </th>
-                                <th>
+                                </td>
+                                <td>
                                     <label for="text">
                                         <h6 class="ppa">Будинок</h6><input type="text" class="w100" id="text">
                                     </label>
-                                </th>
-                                <th>
+                                </td>
+                                <td>
                                     <label for="index">
                                         <h6 class="ppa">Поштовий індекс</h6><input type="text" class="w100" id="index">
                                     </label>
-                                </th>
+                                </td>
                             </tr>
-                        </thead>
+                        </tbody>
                     </table>
                     <hr>
                     <div class="down non"><input type="checkbox" name="" id=""> Я погоджуюсь з правилами оплати та доставки
@@ -246,12 +247,12 @@
                 <h2>06. фіксована форма</h2>
                 <form action="">
                     <label for="login">
-                        <h6>Логін</h6><input type="text" id="login">
+                        <h6>Логін</h6><input type="text"class="w100" id="login">
                     </label>
                     <hr>
                     <label for="pass">
                         <h6 class="password">Пароль</h6>
-                        <input type="password" id="pass"><br>
+                        <input type="password" class="w100" id="pass"><br>
                         <a href="#">Забули пароль?</a><br>
                     </label>
                     <div class="non"><label for="khnow"><input type="checkbox" name="" id="khnow">Запам’ятати пароль</label></div> <br>
