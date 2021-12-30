@@ -15,6 +15,7 @@
 <body>
     <div class="wrapper">
         <div>
+            <h1>Форми</h1>
             <div class="form">
                 <form action="php/sendmail.php" method="post">
 
@@ -30,7 +31,7 @@
                         </p>
                     </div>
                     <div class="youre width">
-                        <select name="Ваше місто"class="w100" id="Youre" required>
+                        <select name="Ваше місто" class="w100" id="Youre" required>
                             <option value="">Ваше місто</option>
                             <option>Київ</option>
                             <option>Львів</option>
@@ -69,22 +70,23 @@
                                 <thead>
                                     <tr>
                                         <th>Статус </th>
-                                        <th><div class="">
-                                            <label for="news"><input type="checkbox"  name="news"
-                                                        id="news">Новинки</label></th>
-                                            <th><label for="sale"><input type="checkbox" name="sale"
-                                                        id="sale">Акційнітовари</label></th>
-                                            <th><label for="last"><input type="checkbox" name="last"
-                                                        id="last">Розпродаж</label></th>
-                                        </div>
+                                        <th>
+                                            <label for="news"><input type="checkbox"  name="news" id="news">Новинки</label>
+                                        </th>
+                                            <th>
+                                                <label for="sale"><input type="checkbox" name="sale" id="sale">Акційнітовари</label>
+                                                    </th>
+                                            <th>
+                                                <label for="last"><input type="checkbox" name="last" id="last">Розпродаж</label>
+                                            </th>
                                     </tr>
                                 </thead>
-                                <tb>
+                                <tbody>
                                     <tr>
                                         <td>Дата</td>
-                                        <td><input type="date" class="w100" placeholder="17-03-2018"></td>
+                                        <td><input type="date" class="w100"></td>
                                     </tr>
-                                </tb>
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -100,7 +102,7 @@
                                 <label for="famale"><input type="radio" name="pol" id="famale">Жінка</label>
                             </div>
                             <div class="right ">
-                                <label for="get"><input type="checkbox" id="get">Отримувати новини<br></label>
+                                <label for="get"><input type="checkbox" class="my-check" id="get">Отримувати новини<br></label>
                                 <label for="buy"><input type="checkbox" id="buy">Купити додому ковбаси<br></label>
                                 <label for="on"><input type="checkbox" id="on">Включити світло</label>
                             </div>
@@ -129,14 +131,15 @@
                             <tr>
                                 <th>Місто:</th>
     
-                                <th><select name=""class="w100" id="">
+                                <th>
+                                    <select name="select" class="w100" id="select">
                                         <option value="">Хмельницький</option>
                                     </select>
                                 </th>
                             </tr>
                             <tr>
-                                <th>Стать:</th>
                                 <div class="non">
+                                <th>Стать:</th>
                                     <th class="men-woma"><label for="man"><input type="radio"  name="point" id="man">Чоловік</label><label
                                             for="woman"><input type="radio" name="point" id="woman">Жінка</label>
                                     </th>
@@ -246,6 +249,7 @@
             <div class="form-6">
                 <h2>06. фіксована форма</h2>
                 <form action="">
+                    <p></p>
                     <label for="login">
                         <h6>Логін</h6><input type="text"class="w100" id="login">
                     </label>

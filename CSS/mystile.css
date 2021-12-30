@@ -1,6 +1,20 @@
 body {
     background-color: #fff;
     position: relative;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+    cursor: url('cursor.cur'),
+        auto;
+}
+
+h1 {
+    font-size: 30px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
 }
 
 h6 {
@@ -80,9 +94,11 @@ h2 {
     color: #b3b3b3;
     font-family: "Roboto";
 }
+
 .hj {
     margin-top: -19px;
 }
+
 .button {
     min-width: 100%;
     border: 1px solid #12d661;
@@ -121,7 +137,7 @@ h2 {
 }
 
 .form-4 {
-    text-align: top;
+    text-align: left;
 }
 
 .table table {
@@ -200,4 +216,71 @@ h2 {
     background-color: #fff;
     color: #84868d;
     border-color: #84868d
+}
+
+.form-6 {
+    width: 300px;
+    position: fixed;
+    top: 90px;
+    right: 100px;
+}
+.form-6 p::before {   
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+
+}
+.form-6 a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #3e6aff;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.pass {
+    margin-bottom: 20px;
+}
+.form-6 input:not(:last-child) {
+    padding: 20px;
+    font-size: 13px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.my-check {
+    position: absolute;
+    appearance: none;
+}
+.my-check+label {
+    position: relative;
+    color: #777;
+    padding: 0 30px 0 ;
+
+}
+.my-check:checked+label {
+    color: #1f1f56;
+}
+.my-check+label::before,
+.my-check+label::after {
+    content: "";
+    position: absolute;
+}
+.my-check+label::before {
+    left: 0;
+    top: -2px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #777;
+    border-radius: 3px;
+}
+.my-check:checked+label::before {
+    border-color: #1f1f56;
+}
+.my-check:checked+label::after {
+    left: 3px;
+    top: 2px;
+    width: 10px;
+    height: 4px;
+    border-left: 2px solid #1f1f56;
+    border-bottom: 2px solid #1f1f56;
+    transform: rotate(-45deg);
 }
